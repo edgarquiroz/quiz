@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+body{
+	font-family: 'Muli', sans-serif;
+  background-color: #f2f2f2;
+}
+h1{
+  font-weight: 700;
+  margin: 0px;
+  padding: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+p{
+    font-weight: 600;;
+}
+li {list-style-type: none;
+    margin:10px 0;}
+input[type=text] {
+  width: 50%;
+ padding: 5px 10px;
+ box-sizing: border-box; 
+ font-size: 16px;
+ border: 1px solid #cccccc;
+
+}
+form p{
+  font-size: 18px;
+  font-weight: 700;
+}
+.material-icons{
+    font-size: 18px;
+    color: #333333;
+    vertical-align: sub;
+}
+#maincontent {
+    margin: 0 auto;
+    max-width: 800px;
+    background:#fff;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+}
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  
+	font-size: 22px;
+	background-color: #ef8a0b;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding:5px 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color: #0075fc;
+}
+/*restaurant listing*/
+
+.rest-single {
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    position: relative;
+}
+.rest-img{
+    display:inline-block;
+    width: 25%;
+}
+.rest-img img{
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+}
+.rest-cont{
+    display:inline-block;
+    width:71%;
+    padding-left: 20px;;
+    vertical-align: top;;
+}
+.rest-main{
+    display: inline-block;
+    width:100%;
+
+}
+.rest-name{
+    display: inline-block;
+    width: 85%;
+}
+.rest-name h1{
+    padding: 0;
+    font-size:30px;
+    font-weight: 700;
+    text-align: left;
+}
+.rest-name p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.rest-rank{
+    display: inline-block;
+    vertical-align: top;
+    width: 14%;
+    text-align: center;
+}
+.rest-rank #numbers{
+    color:#fff;
+    background:#15986d;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.rest-rank #ranking{
+    font-size:18px;
+    text-align: center;
+}
+.rest-rank #total{
+    opacity: .7;
+}
+.rest-rank #votes{
+    color:#9a9a9a;
+    font-size: 13px;
+}
+.rest-feat {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 537px;
+    border-top:1px solid#cccccc;
+}
+.rest-feat p{
+    display:inline-block;
+    font-size:14px;
+    margin-bottom: 20px;
+}
+
+/* nav buttons & navigation*/
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    border: 1px solid #db3056;
+  }
+  
+
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #1089ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+
+  .progressbar{
+    margin:0 0 40px 0;
+    text-align: center;
+  }
+  .step {
+    height: 5px;
+    width: 22%;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.finish {
+    background-color: #4CAF50;
+  }
+  .nav{
+    display: block;
+    text-align: center;
+  margin-top: 40px;}
+
+/* nav buttons & navigation*/
+.qa{
+  font-size: 18px;
+  font-weight: 700;
+}
+#checkboxAnswer{
+  color:#15986d;
+}
+#checkboxWrongAnswer{
+  color:#db3056;
+}
+#palindromeAnswer{
+  color:#15986d;
+}
+#palindromeWrongAnswer{
+  color:#db3056;
+}
+#sentenceAnswer{
+  color:#15986d;
+}
+#sentenceWrongAnswer{
+  color:#db3056;
+}
+@media only screen and (max-width: 768px) {
+  .rest-name h1{font-size: 26px;}
+  .rest-feat {position: inherit;}
+  .rest-rank {width: initial;}
+  .rest-cont{width: 66%;}
+
+}

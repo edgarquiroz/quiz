@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
+    <title>Quiz Challenge - ZipDev</title>
+</head>
+<body>
+    <h1>Quiz Challenge</h1>
+    <div id="maincontent">
+        <div id="maininner">
+            <form name="thisForm" id="regForm">
+                <div id="q" class="tab">
+                    <p>1. How do you describe yourself as a developer?</p>
+                    <ul>
+                        <li><input type="radio" value="Hermit" name="developer" ><label>Hermit</label></li>
+                        <li><input type="radio" value="Sociable" name="developer" ><label>Sociable</label></li>
+                        <li><input type="radio" value="Serious" name="developer" ><label>Serious</label></li>
+                        <li><input type="radio" value="Grumpy" name="developer" ><label>Grumpy</label></li>
+                        <li><input type="radio" value="I Don't know yet" name="developer" ><label>I Don't know yet</label></li>
+                    </ul>    
+                </div>
+                <div id="q" class="tab">
+                    <p>1. Select the JavaScript based technologies:</p>
+                    <ul>
+                        <li><input type="checkbox" value="Angular JS"  id="Angular JS" ><label>Angular JS</label></li>
+                        <li><input type="checkbox" value="Ember"   id="Ember" ><label>Ember</label></li>
+                        <li><input type="checkbox" value="Vue JS"  id="Vue JS" ><label>Vue JS</label></li>
+                        <li><input type="checkbox" value="Java"  id="Java"><label>Java</label></li>
+                        <li><input type="checkbox" value="C#"  id="C#" ><label>C#</label></li>
+                    </ul>
+                </div>
+                <div id="q" class="tab">
+                    <p>3. Please introduce a palindrome:</p>
+                    <input type="text" id="str" name="string" oninput="this.className = ''">
+                </div>
+                <div id="q" class="tab">
+                    <div>
+                    <p>4. Please introduce one sentence:</p>
+                    <input type="text" id="sentence" oninput="this.className = ''">
+                    </div>
+                    <div>
+                    <p>5. Please introduce the same sentence in reverse order:</p>
+                    <input type="text" id="reverse" oninput="this.className = ''">
+                    </div>
+                </div>
+                <div style="overflow:auto;">
+                    <div class="nav">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    <!--button type="button" id="submitBtn" onclick="loopForm(document.thisForm);">Submit</!--button--> 
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+                <!--input type="button" id="Submitbtn" value="Submit" onclick="loopForm(document.thisForm);"--> 
+            </form>
+        </div>
+        <div class="qa" id="radioAnswer"></div>
+        <div class="qa" id="checkboxAnswer"></div>
+        <div class="qa" id="checkboxWrongAnswer"></div>
+        <div class="qa" id="palindromeAnswer"></div>
+        <div class="qa" id="palindromeWrongAnswer"></div>
+        <div class="qa" id="sentresult"></div>
+        <div class="qa" id="sentenceAnswer"></div>
+        <div class="qa" id="sentenceWrongAnswer"></div>
+        <div class="qa" id="resttitle"></div>
+        <div class="qa" id="restaurant-listing">
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
