@@ -12,7 +12,7 @@
         if (form.elements[i].type == "checkbox") {
             if (form.elements[i].checked == true) {
               checkboxResults += form.elements[i].value + " ";
-              if (form.elements[i].value == "Vue JS" && "Angular JS"){
+              if (form.elements[i].value == "Vue JS" && "Angular JS" && "Ember"){
                 checkboxAnswer.innerHTML = "Q2: Your answer " + checkboxResults + "is correct";
               } else{
                 checkboxWrongAnswer.innerHTML = "Q2: Sorry, " + checkboxResults + "is incorrect";
